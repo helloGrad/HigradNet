@@ -1,0 +1,124 @@
+body {
+	background-color: rgb(255, 255, 255);
+	padding-top: 4em;
+}
+a{
+text-decoration: none;
+}
+
+
+.container {
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+@media ( min-width : 768px) {
+	.container {
+		width: 750px;
+	}
+}
+
+@media ( min-width : 992px) {
+	.container {
+		width: 970px;
+	}
+}
+
+@media ( min-width : 1200px) {
+	.container {
+		width: 1300px;
+	}
+}
+
+.main-banner {
+	box-shadow: 5px 5px 5px rgba(51, 26, 0, 0.3), -1px -1px 10px
+		rgba(102, 53, 0, 0.4);
+	margin-bottom: 1.5em;
+	background-color: white;
+}
+
+.board-answer {
+	background-color: rgb(242, 245, 247);
+}
+
+.bar-deco {
+	text-decoration: none;
+	letter-spacing: 4px;
+}
+
+.ad-title {
+	max-height: 20em;
+	object-fit: cover;
+}
+
+.navi-background {
+	background-color: rgba(238, 236, 234, 0.95);
+}
+
+#map {
+	height: 400px;
+	width: 100%;
+}
+
+.humanties {
+	z-index: 1;
+	background-image:
+		url(https://s3.ap-northeast-2.amazonaws.com/elasticbeanstalk-ap-northeast-2-563282106598/college-logo/humanities.jpg);
+	background-size: cover;
+}
+
+.socialscience {
+	z-index: 1;
+	background-image:
+		url(https://s3.ap-northeast-2.amazonaws.com/elasticbeanstalk-ap-northeast-2-563282106598/college-logo/social-science.jpg);
+	background-size: cover;
+}
+
+.naturalscience {
+	z-index: 1;
+	background-image:
+		url(https://s3.ap-northeast-2.amazonaws.com/elasticbeanstalk-ap-northeast-2-563282106598/college-logo/natural-science.jpeg);
+	background-size: cover;
+}
+
+.engineering {
+	z-index: 1;
+	background-image:
+		url(https://s3.ap-northeast-2.amazonaws.com/elasticbeanstalk-ap-northeast-2-563282106598/college-logo/Engineering.jpg);
+	background-size: cover;
+}
+
+.medicine {
+	z-index: 1;
+	background-image:
+		url(https://s3.ap-northeast-2.amazonaws.com/elasticbeanstalk-ap-northeast-2-563282106598/college-logo/medicine.jpg);
+	background-size: cover;
+}
+
+.ocean {
+	z-index: 1;
+	background-image:
+		url(https://s3.ap-northeast-2.amazonaws.com/elasticbeanstalk-ap-northeast-2-563282106598/college-logo/ocean.jpeg);
+	background-size: cover;
+}
+
+.art {
+	z-index: 1;
+	background-image:
+		url(https://s3.ap-northeast-2.amazonaws.com/elasticbeanstalk-ap-northeast-2-563282106598/college-logo/art-education.jpg);
+	background-size: cover;
+}
+
+.interdisciplinary {
+	z-index: 1;
+	background-image:
+		url(https://s3.ap-northeast-2.amazonaws.com/elasticbeanstalk-ap-northeast-2-563282106598/college-logo/interdisciplinary.jpg);
+	background-size: cover;
+}
+
+.black{
+	background-color:rgba(0,0,0,0.7);
+	background-blend-mode:overlay;
+}

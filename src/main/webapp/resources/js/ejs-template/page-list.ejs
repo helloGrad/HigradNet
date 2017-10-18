@@ -1,0 +1,53 @@
+<% if(pageVo.page<5) { %>
+				<a  class="w3-button disabled"
+								href="#" onclick="pageList('<%=type%>','<%=order%>',<%=pageVo.startPage-5%>,'','<%=ttype%>');">&lt;&lt;</a>
+								
+<% } else { %>
+		<a class="w3-button"
+								href="#" onclick="pageList('<%=type%>','<%=order%>',<%=pageVo.startPage-5%>,'','<%=ttype%>');">&lt;&lt;</a>
+<% } 
+		if(pageVo.page == 1) { %>
+		
+		<a  class="w3-button disabled"
+								href="#" onclick="pageList('<%=type%>','<%=order%>',<%=pageVo.page-1%>,'','<%=ttype%>');">&lt;</a>
+<% }
+		else { %>
+						<a  class="w3-button "
+								href="#" onclick="pageList('<%=type%>','<%=order%>',<%=pageVo.page-1%>,'','<%=ttype%>');">&lt;</a>
+								
+<%  }  for(i=pageVo.startPage; i<=pageVo.endPage ; i++) { 
+					if(pageVo.page==i) {%>
+						<a  class="w3-button w3-blue w3-round-large disabled numw3-button" href="#" 
+								onclick="pageList('<%=type%>','<%=order%>',<%=i%>,'','<%=ttype%>');"><%=i%></a>
+					<% } else { %>
+					
+						<a  class="w3-button w3-blue w3-round-large" href="#" 
+								onclick="pageList('<%=type%>','<%=order%>',<%=i%>,'','<%=ttype%>');" ><%=i%></a>
+								
+<% 						}
+		} 
+		
+		if(pageVo.page==pageVo.totalPage) {%>
+			<a  class="w3-button disabled"
+								href="#" 
+								onclick="pageList('<%=type%>','<%=order%>',<%=pageVo.page+1%>,'','<%=ttype%>');" >&gt;</a>
+								
+<%     }    else {  %>
+			<a  class="w3-button"
+							href="#" 
+								onclick="pageList('<%=type%>','<%=order%>',<%=pageVo.page+1%>,'','<%=ttype%>');">&gt;</a>
+								
+								
+<%  }   if(pageVo.endPage >= pageVo.totalPage) { %>
+				<a class="w3-button disabled"
+								href="#" 
+								onclick="pageList('<%=type%>','<%=order%>',<%=pageVo.startPage+5%>,'','<%=ttype%>');">&gt;&gt;</a>
+								
+<%  }  else {  %>
+			<a  class="w3-button "
+						href="#" 
+					onclick="pageList('<%=type%>','<%=order%>',<%=pageVo.startPage+5%>,'','<%=ttype%>');">&gt;&gt;</a>
+					
+					
+<% } %>
+		
